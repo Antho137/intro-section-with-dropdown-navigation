@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-lg-center" id="zero">	
+        <header class="col-sm-12" id="head">
+          <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+            <img src="./images/logo.svg" id="logo" alt="logo" />   
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+              <img src="./images/icon-menu.svg" class="menu" alt="menu">
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<span class="caret"></span></a>
+                    <div class="dropdown-menu" id="features">
+                      <a href="#"><img src="./images/icon-todo.svg" alt="todo"><span class="submenu">Todo List</span></a>
+                      <a href="#"><img src="./images/icon-calendar.svg" alt="calendar"><span class="submenu">Calendar</span></a>
+                      <a href="#"><img src="./images/icon-reminders.svg" alt="reminder"><span class="submenu">Reminder</span></a>
+                      <a href="#"><img src="./images/icon-planning.svg" alt="planning"><span class="submenu">Planning</span></a>
+                    </div>
+                </li>
+                <li class="dropdown" id="company">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company<span class="caret"></span></a>
+                    <div class="dropdown-menu">
+                      <a href="#"><span class="submenu">History</span></a>
+                      <a href="#"><span class="submenu">Our Team</span></a>
+                      <a href="#"><span class="submenu">Blog</span></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Careers</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="login" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="register" href="#">Register</a>
+                </li>
+              </ul>
+          </nav> 	
+        </header>
+      </div>
+			<div class="row justify-content-md-center" id="first">
+        <main class="col-sm-12 col-lg-10 offset-lg-1" id="main">
+          <div class="col-md-6" id="mainRight">
+            <div class="mobile">
+              <img src="./images/image-hero-mobile.png" alt="mobile" />
+            </div>
+            <div class="desktop">
+              <img src="./images/image-hero-desktop.png" alt="desktop" />
+            </div>
+          </div>
+          <div class="col-md-6" id="mainLeft">
+            <div class="intro">
+              <h1>Make remote work</h1>
+              <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+              <button class="more">Learn more</button>
+            </div>
+            <div id="foot">
+              <p class="icons">
+                <img src="./images/client-databiz.svg" alt="databiz" />
+                <img src="./images/client-audiophile.svg" alt="audiophile" />
+                <img src="./images/client-meet.svg" alt="meet" />
+                <img src="./images/client-maker.svg" alt="maker" />
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+			<div class="row justify-content-sm-center" id="second">
+        <footer class="col-sm-12 col-xl-6 offset-xl-3" id="footer">
+          <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="">Antonio Sala</a>.
+          </div>
+        </footer>
+      </div> 
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,434 @@
+body {
+    margin: 0 auto;	
+}
+
+.container-fluid {
+	height: 100vh;
+}
+
+#logo {
+    padding: 20px 0;
+}
+
+#nav .menu img {
+    border: none;
+}
+
+#navbar ul {
+    width: 40%;
+    min-height: 100vh;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 10px 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+#navbar li {
+    padding: 10px 0;
+}
+
+#navbar a {
+    color: hsl(0, 0%, 41%);
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+
+#navbar a:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+
+#navbar .dropdown-menu {
+    border: none;
+}
+
+.caret {
+    margin-left: 5px;    
+}
+
+#features .submenu {
+    font-size: .75rem;
+    padding-left: 10px;
+}
+
+#company .submenu {
+    font-size: .75rem;
+    padding-left: 20px;
+}
+
+#nav .dropdown a {
+    text-decoration: none;
+}
+
+.dropdown-menu img {
+    margin-left: 20px;
+}
+
+#navbar #register {
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 3px 0 7px;
+    border: 1px solid hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    background-color: transparent;
+}
+
+#navbar #login, #navbar #register {
+    text-align: center;
+    font-size: .875rem;
+}
+
+#mainLeft, #mainRight {
+    padding: 0;
+}
+
+#mainRight .mobile {
+    display: block;
+}
+
+#mainRight .desktop {
+    display: none;
+}
+
+#mainRight img {
+    width: 100%;
+    height: auto;
+}
+
+#mainLeft {
+    padding: 30px 0;
+    text-align: center;
+}
+
+#mainLeft h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+#mainLeft p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+}
+
+#mainLeft button {
+    width: 150px;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    padding: 5px 0 10px;
+    border: 1px solid #d3d3d3;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+}
+
+#mainLeft button:hover {
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+.icons img {
+    max-width: 23%;
+    height: auto;
+    padding: 10px;
+}
+
+#foot {
+    margin-top: 20px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+#footer {
+    margin: 0;
+    text-align: center;
+    font-size: .75rem; 
+}
+
+@media only screen and (min-width: 520px) {
+
+    #navbar ul {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 0;
+    }
+
+    #mainRight .mobile {
+        display: none;
+    }
+    
+    #mainRight .desktop {
+        display: block;
+    }
+
+    #mainLeft {
+        padding: 30px 50px 0 20px;
+    }
+
+    #mainLeft h1 {
+        font-size: 3rem;
+        padding-bottom: 40px;
+    }    
+
+    #mainRight img {
+        padding: 30px 50px 0 20px;
+    }
+
+    #foot {
+        margin-top: 30px;
+    }
+
+    #footer {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+
+    #head {
+        padding: 10px 50px;
+    }
+
+    #main {
+        padding: 0 50px;
+    }
+
+    #mainLeft {
+        padding: 30px 60px 0 20px;
+    }
+}
+
+@media only screen and (min-width: 896px) {
+
+    #head {
+        padding: 10px 70px;
+    }
+
+    #main {
+        padding: 0 70px;
+    }
+
+    #mainLeft {
+        padding: 30px 60px 0 20px;
+    }
+    
+    #mainLeft button {
+        margin: 20px 0;
+    }    
+
+    #mainRight img {
+        padding: 30px 20px 0 60px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+    #head {
+        padding: 10px 90px;
+    }
+
+    #main {
+        padding: 0 90px;
+    }
+
+    #mainLeft h1 {
+        font-size: 3.125rem;
+    } 
+}
+
+@media only screen and (min-width: 992px) {
+
+    #head {
+        padding: 10px 30px;
+        margin-left: 0;
+    }
+
+    #navbar ul {
+        width: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        min-height: 0;
+        padding: 0;
+        text-align: left;
+        background-color: transparent;
+        margin: 0 0 0 30px;
+    }
+
+    #navbar li {
+        padding: 0;
+    }
+
+    #navbar a {
+        padding: 0 20px;
+    }
+
+    #nav .dropdown-menu {
+        text-align: left;
+    }
+
+    #company .submenu {
+        height: 0;
+        margin: 0;
+        display: block;
+    }
+
+    #login {
+        margin-left: 180px;
+        margin-right: 30px;
+    }
+
+    #register {
+        width: 130px;
+        font-size: 1rem;
+    }
+
+    #main {
+        padding: 0 20px;
+    }
+
+    #mainLeft {
+        padding: 30px 40px 0 0;
+        text-align: left;
+    }
+
+    #mainLeft h1 {
+        font-size: 3.75rem;
+        padding-bottom: 40px;
+    }
+
+    #mainLeft p {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    #mainLeft button {
+        margin: 20px 0;
+        font-size: 1.125rem;
+        padding: 10px 0 15px;
+    }    
+
+    #mainRight img {
+        padding: 30px 0 0 60px;
+    }
+
+    .icons img {
+        max-width: 23%;
+    }
+
+    #foot {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1180px) {
+
+    #zero, #first {
+        margin: 0;
+    }
+
+    #head {
+        padding: 10px 50px;
+    }
+
+    #login {
+        margin-left: 250px;
+    }
+
+    #navbar ul {
+        margin: 0 50px;
+    }
+
+    #main {
+        padding: 0 60px;
+    }
+
+    #mainLeft {
+        padding: 100px 20px 0 0;
+    }
+
+    #mainLeft h1 {
+        font-size: 4.125rem;
+        padding-bottom: 30px;
+    }
+
+    #mainLeft button {
+        margin: 10px 0;
+    }    
+
+    #mainRight img {
+        padding: 30px 0 0 60px;
+    }
+
+    #footer {
+        font-size: 1rem; 
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    #head {
+        padding: 10px 80px;
+    }
+
+    #login {
+        margin-left: 300px;
+    }
+
+    #mainLeft {
+        padding: 100px 50px 0 0;
+    }
+
+    #mainLeft h1 {
+        font-size: 4.25rem;
+        padding-bottom: 40px;
+    }
+
+    #mainLeft button {
+        margin: 30px 0;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+
+    #login {
+        margin-left: 380px;
+    }
+
+    #mainLeft h1 {
+        font-size: 4.5rem;
+    }
+
+    #mainLeft button {
+        margin: 40px 0 70px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    #login {
+        margin-left: 480px;
+    }
+
+    #mainLeft h1 {
+        font-size: 4.875rem;
+    }
+}
